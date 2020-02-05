@@ -14,32 +14,6 @@ function checklogin() {
 
 }
 
-function LoginShow() {
-    var container = document.getElementById("container");
-    console.log(container)
-    container.innerHTML =
-        `
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="#table" onclick="message()">Messages</a>
-                <a href="#us">user settings</a>
-                <a href="#us">user settings</a>
-                <a href="#us">user settings</a>
-                <a href="#us">user settings</a>
-                <a href="#us">user settings</a>
-    
-            </div>
-        </div>
-        <div id="bordtable"></div> `;
-
-
-
-
-
-
-
-
 }
 
 
@@ -62,14 +36,12 @@ window.onclick = function(event) {
 }
 
 
-//view
 function display() {
     let none = '';
     page.innerHTML = `  
     `
 }
 
-//controller
 
 
 
@@ -85,3 +57,21 @@ function myFunction() {
 
 
 
+function dropDownShow() {
+    var container = document.getElementById("container");
+    console.log(container)
+    container.innerHTML =
+        `
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#table" onclick="message()">Messages</a>
+                <a href="#us">user settings</a>
+                <a href="#us">user settings</a>
+                <a href="#us">user settings</a>
+                <a href="#us">user settings</a>
+                <a href="#us">user settings</a>
+    
+            </div>
+        </div>
+        <div id="table"></div> `;

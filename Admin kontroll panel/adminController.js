@@ -11,7 +11,7 @@ function addTask() {
     });
     taskDescriptionInput.value = '';
     taskname.value = '';
-    taskFris.value = '';
+    taskFrist.value = '';
     taskdato.value = '';
     show();
 }
